@@ -22,7 +22,7 @@ This library implements basic tools, but anyone can improve it and publish new v
 
 ## Documentation
 
-> **[Getting started](docs/Getting_started.md)**  
-> **[The Sequence module](docs/The_Sequence_module.md)**  
-> **[The Trace module](docs/The_Trace_module.md)**  
-> **[Use cases](docs/Use_cases.md)**
+> **[Getting started](Getting_started.md)**  
+> **[The Sequence module](The_Sequence_module.md)**  
+> **[The Trace module](The_Trace_module.md)**  
+> **[Use cases](Use_cases.md)**
