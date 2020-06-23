@@ -92,7 +92,7 @@ Sequence(sequenceType, formula, sequenceName = "u")
     > *type: dict*
     
     The list of the stored points of the sequence.  
-    > Sequence points can be stored with the [calc()](#calc) method.
+    > Sequence points can be stored with the [calc()](#sequencecalc) method.
     
     > If the sequence type is a [points list](#sequencepointslist), the entered points are automatically stored in Sequence.pointsList.
 
