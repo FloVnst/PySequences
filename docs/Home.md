@@ -21,7 +21,7 @@ This module implements basic tools, but anyone can improve it and publish new ve
 
 ## Documentation
 
-> **[Getting started](Getting_started.md)**  
-> **[The Sequence class](The_Sequence_class.md)**  
-> **[The Trace class](The_Trace_class.md)**  
-> **[Use cases](Use_cases.md)**
+> **[Getting started](https://github.com/FlorianVaneste/PySequences/wiki/Getting_started)**  
+> **[The Sequence class](https://github.com/FlorianVaneste/PySequences/wiki/The_Sequence_class)**  
+> **[The Trace class](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class)**  
+> **[Use cases](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases)**

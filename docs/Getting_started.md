@@ -19,13 +19,13 @@ pip install matplotlib
 ````
 *Note: pip is automatically installed if Python >= 2.7.9 or Python 3 >= 3.4 is installed on your computer.*
 
-## Import SequencesLib
+## Import PySequences
 
-First, download the SequencesLib files by clicking [here](https://github.com/FlorianVaneste/Sequences/archive/master.zip).
+First, download the PySequences files by clicking [here](https://github.com/FlorianVaneste/Sequences/archive/master.zip).
 
-Unzip it, and just copy-paste the "sequenceslib" folder in your python project folder.
+Unzip it, and just copy-paste "pySequences.py" in your python project folder.
 
-Then, write this line at the start of your python files to use the Sequences module:
+Then, write this line at the start of your python files to use the PySequences module:
 ````python
-from sequences import *
+from pySequences import *
 ````

@@ -19,9 +19,14 @@ This module implements basic tools, but anyone can improve it and publish new ve
 
 ---
 
-## Documentation
+## [Documentation](https://github.com/FlorianVaneste/PySequences/wiki/Home)
 
-> **[Getting started](docs/Getting_started.md)**  
-> **[The Sequence module](docs/The_Sequence_class.md)**  
-> **[The Trace module](docs/The_Trace_class.md)**  
-> **[Use cases](docs/Use_cases.md)**
+> ### [Getting started](https://github.com/FlorianVaneste/PySequences/wiki/Getting_started) 
+> > #### [Install dependencies](https://github.com/FlorianVaneste/PySequences/wiki/Getting_started#installdependencies) 
+> > #### [Import PySequences](https://github.com/FlorianVaneste/PySequences/wiki/Getting_started#importpysequences) 
+> ### [The Sequence class](https://github.com/FlorianVaneste/PySequences/wiki/The_Sequence_class)  
+> > #### [The Sequence() constructor]()
+> > #### [The Sequence objects Attributes]()
+> > #### [The Sequence objects Methods]()
+> ### [The Trace class](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class)  
+> ### [Use cases](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases)
