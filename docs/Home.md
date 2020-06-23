@@ -3,9 +3,9 @@
 PySequences is a small python module for modeling sequences and plotting them on a graph.
 
 It enables to model a sequence in several ways:
-* By enter a recurrence relation
-* By enter a function formula
-* By directly enter the coordinates of each point of the sequence
+* By entering a recurrence relation
+* By entering a function formula
+* By directly entering the coordinates of each point of the sequence
 
 Then, you will be able to calculate any term of the sequence and plot it on a graph.
 
