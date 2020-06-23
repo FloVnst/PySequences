@@ -24,7 +24,7 @@ class Sequence:
             *   if sequenceType parameter is equal to "pointsList" :
                     For the set {(0,7), (1,5), (2,3), (3,1.5), (4,1)},
                     formula parameter will be equal to the following list :
-                        formula = [(0,7), (1,5), (2,3), (3,1.5), (4,1)]
+                        formula = {0: 7, 1: 5, 2: 3, 3: 1.5, 4: 1}
 
         :param sequenceName: the sequence name ("u" is the default value)
         :return: None
@@ -48,8 +48,8 @@ class Sequence:
             self.type = "recurrenceRelation"
             self.n0 = formula[0]  # n-coordinate for which we already know the y-ordinate
             self.u_n0 = formula[1]  # y-coordinate for the n0 abscissa-position
-            self.step = formula[2]  # step i between each n-coordinate (integer)
-            self.u_nPlusI = formula[3]  # recurrence relation between n and n + 1 (aka n + step) (a lambda function)
+            self.stepI = formula[2]  # step i between each n-coordinate (integer)
+            self.u_nPlusI = formula[3]  # recurrence relation between n and n + i (aka n + step) (a lambda function)
             self.pointsList = {self.n0: self.u_n0}
 
         # sequence obtained from a points list
@@ -79,9 +79,9 @@ class Sequence:
         elif self.type == "recurrenceRelation":
             u_n = self.u_n0
             if n >= self.n0 + 1:
-                for n_temp in range(self.n0 + 1, n + 1):
+                for n_temp in range(self.n0 + 1, n + 1, self.stepI):
                     u_n = self.u_nPlusI(u_n)
-                    if store_point:
+                    if n == n_temp and store_point:
                         self.pointsList[n] = u_n
             return u_n
 
