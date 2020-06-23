@@ -22,7 +22,7 @@ Sequence(sequenceType, formula, sequenceName = "u")
     
 * #### formula :  
     A set of data enabling to build the sequence.  
-    The data structure varies depending on the [sequenceType](#sequencetype) value.
+    The data structure varies depending on the [sequenceType](#sequencetype-) value.
     
     * ##### If sequenceType is equal to "recurrenceRelation":  
         ````formula = (n0, u_n0, i, u_nPlusI)````  
@@ -92,7 +92,7 @@ Sequence(sequenceType, formula, sequenceName = "u")
     > *type: dict*
     
     The list of the stored points of the sequence.  
-    > Sequence points can be stored with the [calc()]() method.
+    > Sequence points can be stored with the [calc()](#calc) method.
     
     > If the sequence type is a [points list](#sequencepointslist), the entered points are automatically stored in Sequence.pointsList.
 
@@ -179,7 +179,7 @@ Sequence(sequenceType, formula, sequenceName = "u")
 
 ## The Sequence objects Methods
 
-* ### calc()
+* ### Sequence.calc()
   Calculate the y-coordinate of the sequence for a given n-value.  
   
   ````calc(n, store_point: bool = False)````  
@@ -197,14 +197,14 @@ Sequence(sequenceType, formula, sequenceName = "u")
     
     A boolean indicating if the calculated point must be stored in [Sequence.pointsList](#sequencepointslist).
   
-* ### trace()
+* ### Sequence.trace()
   ````trace(markerSize: float = 2, markerColor="0")````  
 
   * #### markerSize:
   
   * #### markerColor:
 
-* ### printAllStoredPoints()
+* ### Sequence.printAllStoredPoints()
   ````printAllStoredPoints()````  
   
   
