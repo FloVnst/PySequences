@@ -2,6 +2,38 @@
 
 The sequence class enables to model sequences and do some operations on them.  
 
+<br>
+
+---
+
+<br>
+
+> ## Summary
+> ### [The Sequence() constructor](#the-sequence-constructor)
+> ### [The Sequence objects Attributes](#the-sequence-objects-attributes)
+> > #### [Generic attributes](#generic-attributes)  
+> > > ##### [Sequence.name](#sequencename)  
+> > > ##### [Sequence.type](#sequencetype)  
+> > > ##### [Sequence.pointsList](#sequencepointslist)  
+> > > ##### [Sequence.constants](#sequenceconstants)  
+> > #### [Additional attributes for the sequences defined by a recurrence relation](#additional-attributes-for-sequences-defined-by-a-recurrence-relation)  
+> > > ##### [Sequence.n0](#sequencen0)
+> > > ##### [Sequence.u_n0](#sequenceu_n0)
+> > > ##### [Sequence.stepI](#sequencestepi)
+> > > ##### [Sequence.u_nPlusI](#sequenceu_nplusi)
+> > #### [Additional attributes for the sequences defined by a function formula](#additional-attributes-for-sequences-defined-by-a-function-formula)  
+> > > ##### [Sequence.formula](#sequenceformula)
+> ### [The Sequence objects Methods](#the-sequence-objects-methods)
+> > #### [Sequence.calc()](#sequencecalc)
+> > #### [Sequence.draw()](#sequencedraw)
+> > #### [Sequence.printAllStoredPoints()](#sequenceprintallstoredpoints)
+
+<br>
+
+---
+
+<br>
+
 ## The Sequence() constructor
 The Sequence() constructor enables to create sequences.  
 ````
@@ -202,7 +234,7 @@ Sequence(sequenceType, formula, sequenceName = "u")
   
   ***Note:** Only the points stored in the Sequence.pointsList attribute are placed on the graph.*  
   
-  *For more information, refer to the store attribute of [Sequence.calc()](sequencecalc).*  
+  *For more information, refer to the store attribute of [Sequence.calc()](#sequencecalc).*  
   
   ````trace(markerSize: float = 2, markerColor="0")````  
 
@@ -241,14 +273,12 @@ Sequence(sequenceType, formula, sequenceName = "u")
   
   ***Note:** Only the points stored in the Sequence.pointsList attribute are placed on the graph.*  
   
-  *For more information, refer to the store attribute of [Sequence.calc()](sequencecalc).*  
+  *For more information, refer to the store attribute of [Sequence.calc()](#sequencecalc).*  
   
   ````printAllStoredPoints()````  
-  
   
 <br>
 
 ---
 
 [Back to top ⮥](#pysequencessequence)
-

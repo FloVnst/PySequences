@@ -44,6 +44,6 @@ This module implements basic tools, but anyone can improve it and publish new ve
 > > #### [The Sequence objects Methods](https://github.com/FlorianVaneste/PySequences/wiki/The_Sequence_class#the-sequence-objects-methods)
 > > > #### [Sequence.calc()](https://github.com/FlorianVaneste/PySequences/wiki/The_Sequence_class#sequencecalc)
 > > > #### [Sequence.draw()](https://github.com/FlorianVaneste/PySequences/wiki/The_Sequence_class#sequencedraw)
-> > > #### [Sequence.printAllPoints()](https://github.com/FlorianVaneste/PySequences/wiki/The_Sequence_class#sequenceprintallpoints)
+> > > #### [Sequence.printAllStoredPoints()](https://github.com/FlorianVaneste/PySequences/wiki/The_Sequence_class#sequenceprintallstoredpoints)
 > ### [The Trace class](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class)  
 > ### [Use cases](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases)

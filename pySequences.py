@@ -116,8 +116,8 @@ class Trace:
         """
         Trace object defined by a list of points.
         :param pointsList: a list of points under the following form : {n: u_n, n': u_n', n'': u_n'', ...}
-        :param markerSize: the size of the points on the graph
-        :param markerColor: the color of the points on the graph
+        :param markerSize: the default size of the points on the graph
+        :param markerColor: the default color of the points on the graph
         :return: None
         """
         if pointsList is None:
