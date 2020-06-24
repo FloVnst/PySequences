@@ -132,12 +132,12 @@ Sequence(sequenceType, formula, sequenceName = "u")
     > After having defined the sequence, we add it the **a** and **b** constants.
       For this, we have to define these constants with the following structure: 
     > ````python
-    >   mySequence.constants["constantName"] = constantValue
+    > mySequence.constants["constantName"] = constantValue
     > ````
     > Then, the lambda function will be able to access these constants.  
     > 
 
-### Attributes of the sequences defined by a recurrence relation
+### Additional attributes for the sequences defined by a recurrence relation
 
 * #### Sequence.n0
   The first defined n-value of the sequence.  
@@ -167,7 +167,7 @@ Sequence(sequenceType, formula, sequenceName = "u")
   > * [u_nPlusI in the formula parameter of the Sequence() constructor](#u_nPlusI) 
 
 
-### Attributes of the sequences defined by a function formula
+### Additional attributes for the sequences defined by a function formula
 
 * #### Sequence.formula
   The lambda function which represents the function formula used to calculate the sequence points coordinates.  
@@ -197,14 +197,52 @@ Sequence(sequenceType, formula, sequenceName = "u")
     
     A boolean indicating if the calculated point must be stored in [Sequence.pointsList](#sequencepointslist).
   
-* ### Sequence.trace()
+* ### Sequence.draw()
+  Place the points of the sequence on a graph.  
+  
+  ***Note:** Only the points stored in the Sequence.pointsList attribute are placed on the graph.*  
+  
+  *For more information, refer to the store attribute of [Sequence.calc()](sequencecalc).*  
+  
   ````trace(markerSize: float = 2, markerColor="0")````  
 
   * #### markerSize:
+    The size of the point on the graph (in pt).
   
   * #### markerColor:
+    The color of the point on the graph.
+    
+    > **Possible values:**  
+    >  - A scalar or sequence of n numbers to be mapped to colors using cmap and norm.  
+    >  - A 2-D array in which the rows are RGB or RGBA.  
+    >  - A sequence of colors of length n.  
+    >  - A single color format string.   
+    >      
+    > <br>     
+    > Note that c should not be a single numeric RGB or RGBA sequence because that is indistinguishable from an array of values to be colormapped. If you want to specify the same RGB or RGBA value for all points, use a 2-D array with a single row. Otherwise, value- matching will have precedence in case of a size matching with x and y.  
+    >  
+    >  <br>  
+    >  <br>  
+    > If you wish to specify a single color for all points prefer the color keyword argument.  
+    >  
+    >  <br>  
+    >  <br>  
+    > Defaults to None. In that case the marker color is determined by the value of color, facecolor or facecolors. In case those are not specified or None, the marker color is determined by the next color of the Axes' current "shape and fill" color cycle. This cycle defaults to rcParams["axes.prop_cycle"] (default: cycler('color', ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'])).  
+    >  
+    >  <br>
+    >  
+    >  **(Source: [Matplotlib documentation](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html))**
 
 * ### Sequence.printAllStoredPoints()
+  Display in the console each point of the sequence, under the following form:  
+  ````u_0 = 1````  
+  ````u_1 = 2````  
+  ````...````  
+  
+  ***Note:** Only the points stored in the Sequence.pointsList attribute are placed on the graph.*  
+  
+  *For more information, refer to the store attribute of [Sequence.calc()](sequencecalc).*  
+  
   ````printAllStoredPoints()````  
   
   

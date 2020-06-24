@@ -99,7 +99,7 @@ class Sequence:
         for n, u_n in self.pointsList.items():
             print(self.name + "_" + str(n) + " = " + str(u_n))
 
-    def trace(self, markerSize: float = 2, markerColor="0"):
+    def draw(self, markerSize: float = 2, markerColor="0"):
         """
         Display all the terms of the sequence on a graph.
         :param markerSize: the size of the points on the graph
@@ -138,6 +138,17 @@ class Trace:
         """
         self.pointsList[n] = y
         plt.scatter(n, y, markerSize, markerColor)
+
+    def addPoints(self, pointsList: dict, markerSize: float = 2, markerColor="0"):
+        """
+        Add several points to the trace object.
+        :param pointsList: a list of points under the form {n0: y_n0, n1: y_n1, ...}
+        :param markerSize: the size of the points on the graph
+        :param markerColor: the color of the points on the graph
+        :return: None
+        """
+        for n, y in pointsList.items():
+            self.addPoint(n, y, markerSize, markerColor)
 
     def draw(self):
         """

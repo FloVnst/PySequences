@@ -29,3 +29,4 @@ Then, write this line at the start of your python files to use the PySequences m
 ````python
 from pySequences import *
 ````
+~~~~~~~~
