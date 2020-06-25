@@ -11,13 +11,13 @@ Thus, this class allows you to draw different sequences on the same graph, which
 <br>
 
 > ## Summary
-> ### [The Trace() constructor](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#the-trace-constructor-1)
-> ### [The Trace objects Attributes](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#the-trace-objects-attributes-1)
-> > #### [Trace.pointsList](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#tracepointslist-1)
-> ### [The Trace objects Methods](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#the-trace-objects-methods-1)
-> > #### [Trace.addPoint()](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#traceaddpoint-1)
-> > #### [Trace.addPoints()](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#traceaddpoints-1)
-> > #### [Trace.draw()](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#tracedraw-1)
+> ### [The Trace() constructor](#the-trace-constructor-1)
+> ### [The Trace objects Attributes](#the-trace-objects-attributes-1)
+> > #### [Trace.pointsList](#tracepointslist-1)
+> ### [The Trace objects Methods](#the-trace-objects-methods-1)
+> > #### [Trace.addPoint()](#traceaddpoint-1)
+> > #### [Trace.addPoints()](#traceaddpoints-1)
+> > #### [Trace.draw()](#tracedraw-1)
 
 <br>
 
@@ -31,7 +31,7 @@ These objects enable to draw any points on the same graph, no matter their belon
 This enables to draw  different sequences on the same graph.
   
 ````
-Trace(pointsList=None, markerSize: float = 2, markerColor="0")
+Trace(pointsList=None, markerColor="0", markerSize: float = 2)
 ````
 
 ### Parameters
@@ -39,10 +39,6 @@ Trace(pointsList=None, markerSize: float = 2, markerColor="0")
     > *type: dict*
 
     A list of points to add on the graph at the trace object initialization.  
-    
-* #### markerSize:  
-    > *type: float*  
-    Define the default size of the new points (in pt).
     
 * #### markerColor:  
     Define the default color of the new points.  
@@ -67,6 +63,10 @@ Trace(pointsList=None, markerSize: float = 2, markerColor="0")
     >  <br>
     >  
     >  **(Source: [Matplotlib documentation](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html))**
+
+* #### markerSize:  
+    > *type: float*  
+    Define the default size of the new points (in pt).
 
 <br>
 
@@ -97,7 +97,7 @@ Trace(pointsList=None, markerSize: float = 2, markerColor="0")
 ### Trace.addPoint()  
 Add a new point to the trace object.  
 
-````Trace.addPoint(n, y, markerSize: float = 2, markerColor="0")````  
+````Trace.addPoint(n, y, markerColor="0", markerSize: float = 2)````  
 
 * #### n:
   The n-value of the point.
@@ -136,7 +136,7 @@ Add a new point to the trace object.
 ### Trace.addPoints()  
 Add new points to the trace object. 
 
-````Trace.addPoints(pointsList: dict, markerSize: float = 2, markerColor="0")````
+````Trace.addPoints(pointsList: dict, markerColor="0", markerSize: float = 2)````
 
 * #### pointsList:
   The list of the points to add, under the following form:  

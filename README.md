@@ -29,4 +29,7 @@ This module implements basic tools, but anyone can improve it and publish new ve
 > > #### [The Sequence objects Attributes](https://github.com/FlorianVaneste/PySequences/wiki/The_Sequence_class#the-sequence-objects-attributes)
 > > #### [The Sequence objects Methods](https://github.com/FlorianVaneste/PySequences/wiki/The_Sequence_class#the-sequence-objects-methods)
 > ### [The Trace class](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class)  
+> > #### [The Trace() constructor](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#the-trace-constructor-1)
+> > #### [The Trace objects Attributes](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#the-trace-objects-attributes-1)
+> > #### [The Trace objects Methods](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#the-trace-objects-methods-1)
 > ### [Use cases](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases)

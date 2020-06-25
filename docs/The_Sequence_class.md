@@ -236,10 +236,7 @@ Sequence(sequenceType, formula, sequenceName = "u")
   
   *For more information, refer to the store attribute of [Sequence.calc()](#sequencecalc).*  
   
-  ````trace(markerSize: float = 2, markerColor="0")````  
-
-  * #### markerSize:
-    The size of the point on the graph (in pt).
+  ````trace(markerColor="0", markerSize=None)````  
   
   * #### markerColor:
     The color of the point on the graph.
@@ -264,6 +261,9 @@ Sequence(sequenceType, formula, sequenceName = "u")
     >  <br>
     >  
     >  **(Source: [Matplotlib documentation](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html))**
+
+  * #### markerSize:
+    The size of the point on the graph (in pt).
 
 * ### Sequence.printAllStoredPoints()
   Display in the console each point of the sequence, under the following form:  

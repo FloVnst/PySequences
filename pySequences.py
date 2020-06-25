@@ -99,11 +99,11 @@ class Sequence:
         for n, u_n in self.pointsList.items():
             print(self.name + "_" + str(n) + " = " + str(u_n))
 
-    def draw(self, markerSize: float = 2, markerColor="0"):
+    def draw(self, markerColor="0", markerSize: float = 2):
         """
         Display all the terms of the sequence on a graph.
-        :param markerSize: the size of the points on the graph
         :param markerColor: the color of the points on the graph
+        :param markerSize: the size of the points on the graph
         :return None
         """
         for n, u_n in self.pointsList.items():
@@ -112,43 +112,59 @@ class Sequence:
 
 
 class Trace:
-    def __init__(self, pointsList=None, markerSize: float = 2, markerColor="0"):
+    def __init__(self, pointsList=None, markerColor="0", markerSize: float = 2):
         """
         Trace object defined by a list of points.
         :param pointsList: a list of points under the following form : {n: u_n, n': u_n', n'': u_n'', ...}
-        :param markerSize: the default size of the points on the graph
         :param markerColor: the default color of the points on the graph
+        :param markerSize: the default size of the points on the graph
         :return: None
         """
         if pointsList is None:
             pointsList = {}
         self.pointsList = pointsList
 
+        self.markerColor = markerColor
+        self.markerSize = markerSize
+
         for n, y in pointsList.items():
             plt.scatter(n, y, markerSize, markerColor)
 
-    def addPoint(self, n, y, markerSize: float = 2, markerColor="0"):
+    def addPoint(self, n, y, markerColor="0", markerSize=None):
         """
         Add a point to the trace object.
         :param n: the n-coordinate of the point to add
         :param y: the y-coordinate of the point to add
-        :param markerSize: the size of the point on the graph
         :param markerColor: the color of the point on the graph
+        :param markerSize: the size of the point on the graph
         :return: None
         """
+
+        if markerColor is None:
+            markerColor = self.markerColor
+
+        if markerSize is None:
+            markerSize = self.markerSize
+
         self.pointsList[n] = y
         plt.scatter(n, y, markerSize, markerColor)
 
-    def addPoints(self, pointsList: dict, markerSize: float = 2, markerColor="0"):
+    def addPoints(self, pointsList: dict, markerColor="0", markerSize=None):
         """
         Add several points to the trace object.
         :param pointsList: a list of points under the form {n0: y_n0, n1: y_n1, ...}
-        :param markerSize: the size of the points on the graph
         :param markerColor: the color of the points on the graph
+        :param markerSize: the size of the points on the graph
         :return: None
         """
+        if markerColor is None:
+            markerColor = self.markerColor
+
+        if markerSize is None:
+            markerSize = self.markerSize
+
         for n, y in pointsList.items():
-            self.addPoint(n, y, markerSize, markerColor)
+            self.addPoint(n, y, markerColor, markerSize)
 
     def draw(self):
         """
