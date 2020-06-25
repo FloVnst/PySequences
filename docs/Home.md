@@ -54,3 +54,8 @@ This module implements basic tools, but anyone can improve it and publish new ve
 > > > ##### [Trace.addPoints()](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#traceaddpoints-1)
 > > > ##### [Trace.draw()](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#tracedraw-1)
 > ### [Use cases](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases)
+> > #### [Model and draw sequences](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases#model-and-draw-sequences-1)
+> > > ##### [Model and draw a sequence with a recurrence relation](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases#model-and-draw-a-sequence-with-a-recurrence-relation-1)
+> > > ##### [Model and draw a sequence with a function formula](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases#model-and-draw-a-sequence-with-a-function-formula-1)
+> > > ##### [Model and draw a sequence with a list of points](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases#model-and-draw-a-sequence-with-a-list-of-points-1)
+> > #### [Multi-sequences drawing](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases#multi-sequences-drawing-1)

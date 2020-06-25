@@ -33,3 +33,5 @@ This module implements basic tools, but anyone can improve it and publish new ve
 > > #### [The Trace objects Attributes](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#the-trace-objects-attributes-1)
 > > #### [The Trace objects Methods](https://github.com/FlorianVaneste/PySequences/wiki/The_Trace_class#the-trace-objects-methods-1)
 > ### [Use cases](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases)
+> > #### [Model and draw sequences](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases#model-and-draw-sequences-1)
+> > #### [Multi-sequences drawing](https://github.com/FlorianVaneste/PySequences/wiki/Use_cases#multi-sequences-drawing-1)

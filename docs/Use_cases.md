@@ -1,14 +1,33 @@
 # Use cases
   
 The following examples are going to help you become familiar with PySequences.  
-The aim of this page is to introduce most of the sequences implementations with PySequences.
+The aim of this page is to introduce most of the sequences implementations in PySequences.
+
+<br>
+
+---
+
+<br>
+
+> ## Summary
+> ### [Model and draw sequences](#model-and-draw-sequences-1)
+> > #### [Model and draw a sequence with a recurrence relation](#model-and-draw-a-sequence-with-a-recurrence-relation-1)
+> > #### [Model and draw a sequence with a function formula](#model-and-draw-a-sequence-with-a-function-formula-1)
+> > #### [Model and draw a sequence with a list of points](#model-and-draw-a-sequence-with-a-list-of-points-1)
+> ### [Multi-sequences drawing](#multi-sequences-drawing-1)
+
+<br>
+
+---
+
+<br>
 
 ## Model and draw sequences
 
 This section aims to show how to model sequences, in order to calculate any of their terms.
 
 ### Model and draw a sequence with a recurrence relation
-> In this example, we consider the following sequence:  
+> **In this example, we consider the following sequence:**  
 > u<sub>0</sub> = 6  
 > u<sub>n+1</sub> = (u<sub>n</sub> + 3)<sup>2</sup>
 
@@ -42,7 +61,8 @@ This section aims to show how to model sequences, in order to calculate any of t
 >     * **i** = ````1````, because the increment is equal to 1 (u<sub>n+**1**</sub>).
 >     * **u_nPlusI** = ````lambda u_n: (u_n + 3)**2````, because u<sub>n+1</sub> = (u<sub>n</sub> + 3)<sup>2</sup>.
     
->     Thus, the formula parameter is equal to `````(0, 6, 1, lambda u_n: (u_n + 3)**2)`````.
+>     **Thus, the formula parameter is equal to:**  
+>     `````(0, 6, 1, lambda u_n: (u_n + 3)**2)`````.
 >    
 > * **sequenceName** = ````"u"````  
 >   *Note: Here, you can keep this parameter empty because the default sequenceName value is already "u".*
@@ -106,7 +126,7 @@ u.draw()
 >     So, the syntax for this parameter is as follows:  
 >     ````function````  (a lambda function representing the function formula used to calculate the sequence values)  
 >    
->     In this example, function is equal to:  
+>     In this example, **function** is equal to:  
 >     ````lambda n: 3 * n**2 - 6````  
 >     because:  
 >     v<sub>n</sub> = f(n) = 3n<sup>2</sup> - 6
