@@ -7,7 +7,9 @@ It enables to model a sequence in several ways:
 * By entering a function formula
 * By directly entering the coordinates of each point of the sequence
 
-Then, you will be able to calculate any term of the sequence and plot it on a graph.
+Then, you will be able to calculate any term of the sequence and plot it on a graph.  
+
+**[Start to use PySequences](https://github.com/FlorianVaneste/PySequences/wiki/Getting_started)**
 
 ---
 
