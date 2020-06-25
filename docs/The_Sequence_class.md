@@ -40,7 +40,7 @@ The Sequence() constructor enables to create sequences.
 Sequence(sequenceType, formula, sequenceName = "u")
 ````
 ### Parameters
-* #### sequenceType :  
+* #### sequenceType:  
     > *type: str*
 
     > PySequences enables to model sequences in several ways:
@@ -48,11 +48,11 @@ Sequence(sequenceType, formula, sequenceName = "u")
     > * By entering a function formula  
     > * By directly entering the coordinates of each point of the sequence  
     
-    Thus, the sequenceType parameter accepts 3 values :  
+    Thus, the sequenceType parameter accepts 3 values:  
     ````"recurrenceRelation"````, 
     ````"function"```` or  ````"pointsList"````
     
-* #### formula :  
+* #### formula:  
     A set of data enabling to build the sequence.  
     The data structure varies depending on the [sequenceType](#sequencetype-) value.
     
@@ -139,7 +139,7 @@ Sequence(sequenceType, formula, sequenceName = "u")
     
     This attribute is useful when a lambda function defining the sequence contains a variable whose value is not known in advance.
     
-    > **Example :**  
+    > **Example:**  
     We want to create a sequence given by an affine function formula, under the form **ax + b**.  
     In our case, **a** and **b** values have to be entered by the user.
     > 
