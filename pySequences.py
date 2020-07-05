@@ -58,10 +58,10 @@ class Sequence:
             self.pointsList = formula
 
         else:
-            print("---\nERROR: unrecognized sequence type.\nsequenceType parameter can only take \"function\","
-                  "\"recurrenceRelation\" and \"pointsList\" as value.\nRead the documentation for more information."
-                  "\n---")
             self.type = None
+            raise Exception("unrecognized sequence type.\nsequenceType parameter can only take \"function\","
+                            "\"recurrenceRelation\" and \"pointsList\" as value.\nRead the documentation for more "
+                            "information.")
 
     def calc(self, n, store_point: bool = False):
         """
@@ -89,7 +89,7 @@ class Sequence:
             if n in self.pointsList.keys():
                 return self.pointsList[n]
             else:
-                print("WARNING: none point with n = " + str(n) + " is stored in Sequence.pointsList.")
+                raise Exception("WARNING: none point with n = {} is stored in Sequence.pointsList.".format(n))
 
     def printAllStoredPoints(self):
         """
