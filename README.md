@@ -1,3 +1,5 @@
+> **INFORMATION:** This module is not longer maintened and should be used only for educational or experimental purpose.
+
 # PySequences
 
 PySequences is a small python module for modeling sequences and plotting them on a graph.
